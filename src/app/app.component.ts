@@ -4,17 +4,19 @@ import { CabecalhoComponent } from "./components/cabecalho/cabecalho.component";
 import { RodapeComponent } from './components/rodape/rodape.component';
 import { FormPensamentosComponent } from "./components/pensamentos/form-pensamentos/form-pensamentos.component";
 import { CommonModule } from '@angular/common';
+import { MuralComponent } from "./components/pensamentos/mural/mural.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, 
-    CabecalhoComponent, 
-    RodapeComponent, 
-    FormPensamentosComponent, 
-    CommonModule, 
-  ],
+    RouterOutlet,
+    CabecalhoComponent,
+    RodapeComponent,
+    FormPensamentosComponent,
+    CommonModule,
+    MuralComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
