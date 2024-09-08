@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { Pensamento } from '../pensamento/pensamento.component';
+import { PensamentoService } from '../pensamento.service';
 
 @Component({
   selector: 'app-form-pensamentos',
@@ -14,19 +15,29 @@ import { Pensamento } from '../pensamento/pensamento.component';
   templateUrl: './form-pensamentos.component.html',
   styleUrl: './form-pensamentos.component.css'
 })
-export class FormPensamentosComponent {
-  pensamento:Pensamento = {
+export class FormPensamentosComponent implements OnInit{
+
+  constructor(
+    private service: PensamentoService,
+    private router: Router) {}
+
+  ngOnInit(): void {
+  }
+
+  pensamento: Pensamento = {
     id: 0,
     conteudo: '',
     autoria: '',
-    modelo: ''
+    modelo: 'modelo1'
   }
 
   criarPensamento() {
-    alert("Pensamento criado")
+    this.service.criar(this.pensamento).subscribe(() => {
+      this.router.navigate(["/listar-pensamentos"])
+    })
   }
 
   cancelar() {
-    alert("Acão cancelada")
+    this.router.navigate(["/listar-pensamentos"])
   }
 }
