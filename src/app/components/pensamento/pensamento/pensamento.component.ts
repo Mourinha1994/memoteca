@@ -20,3 +20,10 @@ export class PensamentoComponent {
     return 'pensamento-p'
   }
 }
+
+export interface Pensamento {
+  id: number;
+  conteudo: string;
+  autoria: string;
+  modelo: string;
+}
