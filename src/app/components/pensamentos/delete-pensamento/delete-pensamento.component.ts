@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PensamentoService } from '../pensamento.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Pensamento } from '../pensamento/pensamento.component';
+import { Pensamento } from '../../../models/pensamento.model';
 
 @Component({
   selector: 'app-delete-pensamento',
