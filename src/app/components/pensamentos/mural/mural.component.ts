@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { Pensamento, PensamentoComponent } from "../../pensamento/pensamento/pensamento.component";
+import { Pensamento, PensamentoComponent } from "../pensamento/pensamento.component";
 import { CommonModule } from '@angular/common';
 
 @Component({
