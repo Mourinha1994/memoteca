@@ -16,7 +16,7 @@ import { Pensamento } from '../pensamento/pensamento.component';
 })
 export class FormPensamentosComponent {
   pensamento:Pensamento = {
-    id: 1,
+    id: 0,
     conteudo: '',
     autoria: '',
     modelo: ''
