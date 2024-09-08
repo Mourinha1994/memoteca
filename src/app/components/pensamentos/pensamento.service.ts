@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Pensamento } from './pensamento/pensamento.component';
 import { Observable } from 'rxjs';
+import { Pensamento } from '../../models/pensamento.model';
 
 @Injectable({
   providedIn: 'root'

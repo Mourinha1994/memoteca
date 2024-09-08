@@ -17,6 +17,12 @@
       "conteudo": "Angular é o melhor",
       "autoria": "Dev Alura",
       "modelo": "modelo3"
+    },
+    {
+      "id": 4,
+      "conteudo": "Vou te amar por toda a minha vida; vem comigo por este caminho. Me dê a mão para fugir desta terrível escuridão.",
+      "autoria": "Dragon Ball GT",
+      "modelo": "modelo1"
     }
   ]
 }

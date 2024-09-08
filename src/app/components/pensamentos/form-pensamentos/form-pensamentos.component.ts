@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
-import { Pensamento } from '../pensamento/pensamento.component';
 import { PensamentoService } from '../pensamento.service';
+import { Pensamento } from '../../../models/pensamento.model';
 
 @Component({
   selector: 'app-form-pensamentos',
