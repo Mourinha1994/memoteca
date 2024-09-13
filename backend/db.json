@@ -2,27 +2,27 @@
   "pensamentos": [
     {
       "id": 1,
-      "conteudo": "Que bom que vc veio",
-      "autoria": "Nay",
-      "modelo": "modelo1"
+      "conteudo": "E aconteceu que eu Néfi, disse ao meu pai: Eu irei e cumprirei as ordens do Senhor, porque sei que o Senhor nunca dá ordens aos filhos dos homens, sem antes preparar um caminho pelo qual suas ordens possam ser cumpridas.",
+      "autoria": "1 Néfi 3:7",
+      "modelo": "modelo3"
     },
     {
       "id": 2,
-      "conteudo": "Estudando Angular",
-      "autoria": "Dev Alura",
+      "conteudo": "Três Pratos de Trigo para Três Tigres Tristes",
+      "autoria": "Trava-Lingua popular",
       "modelo": "modelo2"
     },
     {
       "id": 3,
-      "conteudo": "Angular é o melhor",
-      "autoria": "Dev Alura",
-      "modelo": "modelo3"
+      "conteudo": "Hello World!",
+      "autoria": "Any aspiring developer",
+      "modelo": "modelo1"
     },
     {
       "id": 4,
-      "conteudo": "Vou te amar por toda a minha vida; vem comigo por este caminho. Me dê a mão para fugir desta terrível escuridão.",
-      "autoria": "Dragon Ball GT",
-      "modelo": "modelo1"
+      "conteudo": "Deveis, pois, prosseguir com firmeza em Cristo, tendo um perfeito esplendor de esperança e amor a Deus e a todos os homens. Portanto, se assim prosseguirdes, banqueteando-vos com a palavra de Cristo, e perseverardes até o fim, eis que assim diz o Pai: Tereis vida eterna",
+      "autoria": "2 Néfi 31:20",
+      "modelo": "modelo3"
     }
   ]
 }

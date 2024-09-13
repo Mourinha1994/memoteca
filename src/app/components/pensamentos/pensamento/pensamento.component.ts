@@ -15,7 +15,7 @@ export class PensamentoComponent {
   @Input() pensamento: Pensamento | undefined;
 
   larguraPensamento(): string {
-    if (this.pensamento!.conteudo?.length > 256) {
+    if (this.pensamento!.conteudo?.length > 200) {
       return 'pensamento-g'
     }
 

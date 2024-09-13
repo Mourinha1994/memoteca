@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { Pensamento, PensamentoComponent } from "../pensamento/pensamento.component";
+import { PensamentoComponent } from "../pensamento/pensamento.component";
 import { CommonModule } from '@angular/common';
 import { PensamentoService } from '../pensamento.service';
+import { Pensamento } from '../../../models/pensamento.model';
 
 @Component({
   selector: 'app-mural',
