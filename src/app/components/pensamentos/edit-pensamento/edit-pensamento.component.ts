@@ -44,7 +44,7 @@ export class EditarPensamentoComponent implements OnInit {
   }
 
   cancelar() {
-    this.router.navigate(['/listarPensamento'])
+    this.router.navigate(['/listar-pensamentos'])
   }
 
 }

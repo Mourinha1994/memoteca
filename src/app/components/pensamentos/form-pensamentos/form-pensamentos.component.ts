@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { PensamentoService } from '../pensamento.service';
 import { Pensamento } from '../../../models/pensamento.model';
@@ -10,7 +10,8 @@ import { Pensamento } from '../../../models/pensamento.model';
   imports: [
     FormsModule,
     RouterLink,
-    RouterOutlet
+    RouterOutlet,
+    ReactiveFormsModule
   ],
   templateUrl: './form-pensamentos.component.html',
   styleUrl: './form-pensamentos.component.css'
@@ -24,15 +25,22 @@ export class FormPensamentosComponent implements OnInit{
   ngOnInit(): void {
   }
 
-  pensamento: Pensamento = {
-    id: 0,
-    conteudo: '',
-    autoria: '',
-    modelo: 'modelo1'
-  }
+  formulario = new FormGroup({
+    conteudo: new FormControl('', [Validators.required]),
+    autoria: new FormControl('', [Validators.required]),
+    modelo: new FormControl('', [Validators.required])
+  });
 
   criarPensamento() {
-    this.service.criar(this.pensamento).subscribe(() => {
+
+    let pensamento: Pensamento = {
+      id: 0,
+      conteudo: this.formulario.get('conteudo')?.value ?? "",
+      autoria: this.formulario.get('autoria')?.value ?? "",
+      modelo: this.formulario.get('modelo')?.value ?? ""
+    }
+
+    this.service.criar(pensamento).subscribe(() => {
       this.router.navigate(["/listar-pensamentos"])
     })
   }
